@@ -1,6 +1,6 @@
 import json
 
-import requests
+# import requests
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.core.files.storage import FileSystemStorage
@@ -564,4 +564,3 @@ def send_staff_notification(request):
     notification.save()
     print(data.text)
     return HttpResponse("True")
-
